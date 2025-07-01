@@ -191,5 +191,8 @@ Temporary Items
 
 # entire config folder
 
-config/
-
+config/admins.txt
+config/config.txt
+config/dbconfig.txt
+config/game_options.txt
+BUILD.bat

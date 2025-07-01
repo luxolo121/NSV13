@@ -2,7 +2,7 @@
 	"map_name": "NSV Martyr",
 	"map_link": "martyr",
     "map_path": "map_files/Martyr",
-    "map_file": ["martyr1.dmm", "martyr1.dmm"],
+    "map_file": ["martyr1.dmm", "martyr2.dmm"],
 	"traits": [{"Up": 1, "Linkage": "Self"}, {"Down": -1, "Linkage": "Self"}],
 	"space_ruin_levels": -1,
 	"space_empty_levels": 0,

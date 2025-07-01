@@ -15,7 +15,6 @@ endmap
 
 map tycoon
 	default
-	minplayers 12
 	votable
 endmap
 
@@ -23,24 +22,23 @@ map atlas
 	votable
 endmap
 
+map martyr
+	votable
+endmap
+
 map aetherwhisp
-	minplayers 12
-	voteweight 0.5
 	votable
 endmap
 
 map eclipse
-	maxplayers 10
 	votable
 endmap
 
 map galactica
-	minplayers 27
 	votable
 endmap
 
 map gladius
-	minplayers 17
 	votable
 endmap
 
@@ -49,17 +47,14 @@ map hammerhead
 endmap
 
 map serendipity
-	maxplayers 20
 	votable
 endmap
 
 map shrike
-	maxplayers 24
 	votable
 endmap
 
 map snake
-	maxplayers 30
 	votable
 endmap
 
@@ -68,7 +63,7 @@ endmap
 #--------------
 
 map Vago
-#	votable
+	votable
 endmap
 
 #BEGIN DEBUG MAPS
