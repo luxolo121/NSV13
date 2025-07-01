@@ -189,3 +189,7 @@ Temporary Items
 # Common build tooling, C B T
 !/tools/build
 
+# entire config folder
+
+config/
+

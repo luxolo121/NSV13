@@ -116,6 +116,20 @@
 	bound_width = 96
 	armor = list("overmap_light" = 95, "overmap_medium" = 75, "overmap_heavy" = 50)
 
+// new ship class for the custom gamer ship -Keith
+
+/obj/structure/overmap/nanotrasen/destroyer
+	name = "Providence class destroyer"
+	icon = 'nsv13/icons/overmap/nanotrasen/prototype_cruiser.dmi'
+	icon_state = "cruiser"
+	mass = MASS_MEDIUM
+	damage_states = TRUE
+	bound_height = 96
+	bound_width = 96
+	obj_integrity = 700
+	max_integrity = 700
+	armor = list("overmap_light" = 40, "overmap_medium" = 30, "overmap_heavy" = 40)
+
 //Instanced Versions
 
 /obj/structure/overmap/nanotrasen/gunstar
@@ -253,6 +267,22 @@
 	weapon_types[FIRE_MODE_PDC] = new /datum/ship_weapon/pdc_mount(src)
 	weapon_types[FIRE_MODE_AMS] = new /datum/ship_weapon/vls(src)
 	weapon_types[FIRE_MODE_PHORON] = new /datum/ship_weapon/plasma_caster(src)
+
+//player version of the custom gamer ship -Keith
+
+/obj/structure/overmap/nanotrasen/destroyer/starter
+	role = MAIN_OVERMAP
+	obj_integrity = 1200
+	max_integrity = 1200
+	starting_system = "Staging" //Required for all player ships
+	armor = list("overmap_light" = 95, "overmap_medium" = 50, "overmap_heavy" = 10)
+	overmap_deletion_traits = DAMAGE_STARTS_COUNTDOWN
+
+/obj/structure/overmap/nanotrasen/destroyer/starter/apply_weapons()
+	weapon_types[FIRE_MODE_PDC] = new /datum/ship_weapon/pdc_mount(src)
+	weapon_types[FIRE_MODE_AMS] = new /datum/ship_weapon/vls(src)
+	weapon_types[FIRE_MODE_HYBRID_RAIL] = new /datum/ship_weapon/hybrid_railgun(src)
+	weapon_types[FIRE_MODE_BLUE_LASER] = new /datum/ship_weapon/phaser(src)
 
 //AI Versions
 
